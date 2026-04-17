@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Memory | Minimalist Game</title>
+    <meta name="description" content="Latih ingatan Anda dengan pola kotak yang menyala. Game minimalis dan elegan.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pattern Memory</h1>
+            <p id="status">Tekan Mulai untuk Bermain</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-box">
+                <span>Skor</span>
+                <p id="current-score">0</p>
+            </div>
+            <div class="stat-box">
+                <span>Terbaik</span>
+                <p id="high-score">0</p>
+            </div>
+        </div>
+
+        <div class="game-board" id="game-board">
+            <div class="tile color-1" data-index="0" id="tile-0"></div>
+            <div class="tile color-2" data-index="1" id="tile-1"></div>
+            <div class="tile color-3" data-index="2" id="tile-2"></div>
+            <div class="tile color-4" data-index="3" id="tile-3"></div>
+        </div>
+
+        <button id="start-btn">Mulai Game</button>
+
+        <div class="instructions">
+            Perhatikan pola warnanya dan ikuti urutannya.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
